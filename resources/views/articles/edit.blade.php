@@ -2,7 +2,6 @@
 
 @section('title')
     Editer un article{{ $article->title }}
-
 @endsection
 
 @section('content')

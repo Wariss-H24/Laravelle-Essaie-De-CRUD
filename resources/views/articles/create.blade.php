@@ -13,5 +13,4 @@
 
         <button type="submit">Ajouter</button>
     </form>
-
 @endsection

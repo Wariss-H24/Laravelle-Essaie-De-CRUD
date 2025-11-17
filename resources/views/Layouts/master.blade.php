@@ -11,7 +11,9 @@
     <a href="/about">About Us</a>
     <a href="/articles">Articles</a>
     @auth
+    @can('see-admin-menu')
     <a href="/articles/create">Creer un article</a>
+    @endcan
     @endauth
     @guest
     <a href="{{ route('login') }}">Login</a>
@@ -24,8 +26,8 @@
     @csrf
         <input type="submit" value="Se déconnecter">
     </form>
+    
 @endauth
-
 
     @include('messages.allMessages')
     @yield('content')

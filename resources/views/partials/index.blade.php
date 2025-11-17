@@ -2,5 +2,4 @@
     <h3>{{ $article['title'] }}</h3>
     <p>Auteur:{{ $article['user']['name'] }}</p>
     <a href="/article-detail/{{ $article['id'] }}">Lire l'article</a>
-    
 </article>
